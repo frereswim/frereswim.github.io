@@ -1,4 +1,4 @@
- @charset "gb2312";
+ @charset "utf-8";
 .picshow { width: 100%; overflow: hidden; margin: 20px auto; }
 .picshow li { width: 20%; display: inline-block; float: left; overflow: hidden; position: relative; }
 .picshow li i { overflow: hidden; display: block; height: 400px; }
@@ -97,7 +97,7 @@ h3.blogtitle { line-height: 30px; height: 30px; margin: 10px 0; }
 .picbox ul li img { width: 100%; }
 .picinfo h3 { border-bottom: #ccc 1px solid; padding: 20px 0; margin: 0 20px }
 .picinfo span { padding: 20px; display: block; color: #666 }
-.infos { float: left; width: 70%; overflow: hidden; background: #FFF; margin: 20px 0 }
+.infos { float: left; width: 100%; overflow: hidden; background: #FFF; margin: 20px 0 }
 .newsview { padding: 0 30px }
 .intitle { line-height: 40px; height: 40px; font-size: 14px; ; border-bottom: #000 2px solid; }
 .intitle a { font-weight: normal; }
