@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Frere的个人博客</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link href="../css/css.css" type="text/css" rel="stylesheet" />
+		<script src="../js/tianqi.js"></script>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="headerpage"></div>
+
+			<!-- Banner -->
+			<section id="banner">
+
+				<div class="inner">
+
+					<header>
+						<h2>FRERE</h2>
+					</header>
+					<p>Welcome to my Blog
+					<br />Here you are about to
+					<br />embark on your
+					<br />journey of knowledge
+					<br />
+					</p>
+					<footer>
+						<ul class="buttons stacked">
+							<li><a href="#articleSection" class="button fit scrolly">START</a></li>
+						</ul>
+					</footer>
+
+				</div>
+
+			</section>
+
+			<!-- Main -->
+			<article id="main">
+
+				<header class="special container">
+					<span class="icon fa-bar-chart-o"></span>
+					<h2>
+						This is frere Blog
+					</h2>
+					<div id="Layer1" style="display: none; position: absolute; z-index: 100;">
+					</div>
+					<p>
+						在此博客中，你可以<strong>尽情</strong>的浏览你所需要的内容<br />
+						在此中收获你所需要的知识，也非常希望能得到您非常宝贵的 <strong>意见</strong><br />
+						欢迎加我<a  onmouseout="hiddenPic();" onmousemove="showPic(event,'../images/wx.jpg');">QQ</a>与我联系或者发<a  title="xieyongwork@163.com">邮件</a>给
+						<a href="about.html">我</a>，让我们共同交流，期待您的来临。
+					</p>
+				</header>
+
+				<!-- Three -->
+				<section class="wrapper style3 container special" id="articleSection">
+
+					<header class="major">
+						<h2>Next look my article</h2>
+					</header>
+
+					<div id="indexArticleListPage"></div>
+
+					<footer class="major" id="showFooter">
+						<ul class="buttons">
+							<li><a href="javascript:showDiv()" class="button">查看更多</a></li>
+						</ul>
+					</footer>
+					<footer class="major" id="hideFooter">
+						<ul class="buttons">
+							<li><a href="javascript:hideDiv()" class="button">隐藏文章</a></li>
+						</ul>
+					</footer>
+
+				</section>
+
+			</article>
+
+			<!-- CTA -->
+			<section id="cta">
+
+				<header>
+					<h2>Ready to do <strong>something</strong>?</h2>
+					<p>如果你觉得博主的文章写得还不错的话，请给博主一些打赏以作支持和动力！</p>
+				</header>
+				<footer>
+					<ul class="buttons">
+						<li><a href="javascript:pay();" class="button primary">打赏</a></li>
+						<li><a href="index.html" class="button">下回吧</a></li>
+					</ul>
+				</footer>
+
+			</section>
+
+			<!-- Footer -->
+			<div id="footpage"></div>
+
+		</div>
+
+		<div id="content" style="display: none">
+			<a id="example2Pic" class="example2" href="../images/wx.jpg"><img src="" /></a>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../js/jqueryLibrary.min.js"></script>
+			<script src="../js/jquery.imgbox.pack.js"></script>
+			<script>
+				$(function(){
+					$("#headerpage").load("../common/header.html");
+					$("#footpage").load("../common/foot.html");
+					$("#indexArticleListPage").load("../common/indexArticleList.html");
+					$("#hideFooter").hide();
+					$(".example2").imgbox({
+						'speedIn'		: 0,
+						'speedOut'		: 0,
+						'alignment'		: 'center',
+						'overlayShow'	: true,
+						'allowMultiple'	: false
+					});
+				});
+
+				function pay() {
+					document.getElementById("example2Pic").click();
+				}
+
+				function showPic(e,sUrl){
+					var x,y;
+					x = e.clientX;
+					y = e.clientY;
+					document.getElementById("Layer1").style.left = 100+'px';
+					document.getElementById("Layer1").style.top = -120+'px';
+					document.getElementById("Layer1").innerHTML = "<img border='0' src=\"" + sUrl + "\" width='50%' height='50%'>";
+					document.getElementById("Layer1").style.display = "";
+				}
+				function hiddenPic(){
+					document.getElementById("Layer1").innerHTML = "";
+					document.getElementById("Layer1").style.display = "none";
+				}
+
+				function showDiv() {
+					$("#showDiv").show();
+					$("#showFooter").hide();
+					$("#hideFooter").show();
+				}
+
+				function hideDiv() {
+					$("#showDiv").hide();
+					$("#showFooter").show();
+					$("#hideFooter").hide();
+				}
+
+			</script>
+
+	</body>
+</html>

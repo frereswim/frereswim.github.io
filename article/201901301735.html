@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>属于我的小世界</title>
+		<title>个人博客，属于我的小世界</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -20,36 +20,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="../about.html">Frere <span><a href="../index.html">个人博客</a></span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="../index.html">首页</a></li>
-							<li class="submenu">
-								<a href="#">文章分类</a>
-								<ul>
-									<li><a href="#">知识分享</a></li>
-									<li><a href="#">转载引用</a></li>
-									<li><a href="#">心情抒发</a></li>
-									<li><a href="../travel/travelList.html">旅游攻略</a></li>
-									<li><a href="#">音乐收藏</a></li>
-									<li class="submenu">
-										<a href="#">收藏好网</a>
-										<ul>
-											<li><a href="#">新闻</a></li>
-											<li><a href="#">体育</a></li>
-											<li><a href="#">历史</a></li>
-											<li><a href="#">娱乐</a></li>
-											<li><a href="#">旅游</a></li>
-										</ul>
-									</li>
-									<li><a href="../about.html">关于我</a></li>
-								</ul>
-							</li>
-							<!--<li><a href="#" class="button primary">Sign Up</a></li>-->
-						</ul>
-					</nav>
-				</header>
+			<div class="headerpage"></div>
 
 			<!-- Main -->
 				<article id="main">
@@ -70,10 +41,10 @@
 										<header>
 											<div class="tags"><a href="#">个人博客</a> &nbsp; <a href="#">小世界</a></div>
 											<!--<h3>Dolore Amet Consequat</h3>-->
-											<div class="news_about"><strong>简介</strong>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</div>
+											<div class="news_about"><strong><font size="5">简介</font></strong><font size="3">个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</font></div>
 										</header>
 										<div>
-											抒情的心，容易陶醉，绘画的梦，失去疲惫，
+											抒情的心，容易陶醉，绘画的梦，失去疲惫，<br/>
 											人有多伤感，梦就多憔悴，一段沧海，聚散沧桑，<br/>
 											树下梨花应菩提，人间是非多造化，秋枫叶落，无尘风月，<br/>
 											聚散只是一场梦，何必相逢，那个可能，已经成为再也不见，<br/>
@@ -109,34 +80,25 @@
 				</article>
 
 			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="../about.html">Frere-关于我</a></li>
-					</ul>
-
-				</footer>
+			<div class="footpage"></div>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.dropotron.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/jquery.scrollgress.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.dropotron.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+			$(function(){
+				$(".headerpage").load("../common/header.html");
+				$(".footpage").load("../common/foot.html");
+			});
+		</script>
 
 	</body>
 </html>
